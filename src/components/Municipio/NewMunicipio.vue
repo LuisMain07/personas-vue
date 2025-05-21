@@ -72,7 +72,7 @@ export default {
     async saveMunicipio() {
       this.municipio.depa_codi = parseInt(this.depa_codi)
       const res = await axios.post('http://127.0.0.1:8000/api/municipios', this.municipio)
-      if (res.status === 200) {
+      if (res.status === 201) {
         this.$router.push({ name: 'Municipios' })
         Swal.fire({
           position: 'top-end',
