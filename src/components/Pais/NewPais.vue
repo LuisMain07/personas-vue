@@ -30,7 +30,7 @@
             <label for="pais_capi" class="form-label">Capital :</label>
             <div class="input-group">
               <div class="input-group-text"> <font-awesome-icon icon="landmark" /></div>
-              <input type="text" class="form-control" id="pais_capi" placeholder="Capital del País"
+              <input type="number" class="form-control" id="pais_capi" placeholder="Capital del País (Solo id)"
                      v-model="pais.pais_capi" />
             </div>
           </div>
