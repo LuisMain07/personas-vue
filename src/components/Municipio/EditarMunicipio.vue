@@ -70,7 +70,7 @@ export default {
     },
     async updateMunicipio() {
       const res = await axios.put(`http://127.0.0.1:8000/api/municipios/${this.municipio.muni_codi}`, this.municipio)
-      if (res.status === 201) {
+      if (res.status === 200) {
         this.$router.push({ name: 'Municipios' })
         Swal.fire({
           position: 'top-end',

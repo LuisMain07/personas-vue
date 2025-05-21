@@ -65,7 +65,7 @@ export default {
     },
     async updatePais() {
       const res = await axios.put(`http://127.0.0.1:8000/api/paises/${this.pais.pais_codi}`, this.pais)
-      if (res.status === 201) {
+      if (res.status === 200) {
         this.$router.push({ name: 'Paises' })
         Swal.fire({
           position: 'top-end',

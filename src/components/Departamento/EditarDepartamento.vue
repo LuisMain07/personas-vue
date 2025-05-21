@@ -70,7 +70,7 @@ export default {
     },
     async updateDepartamento() {
       const res = await axios.put(`http://127.0.0.1:8000/api/departamentos/${this.departamento.depa_codi}`, this.departamento)
-      if (res.status === 201) {
+      if (res.status === 200) {
         this.$router.push({ name: 'Departamentos' })
         Swal.fire({
           position: 'top-end',

@@ -2,7 +2,10 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/comunas">Comunas</router-link> |
+    <router-link to="/Comunas">Comunas</router-link> |
+    <router-link to="/Municipios">Municipios</router-link> |
+    <router-link to="/Departamentos">Departamentos</router-link> |
+    <router-link to="/Paises">Paises</router-link> |
   </nav>
   <router-view/>
 </template>
